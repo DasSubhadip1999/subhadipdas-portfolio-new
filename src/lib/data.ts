@@ -3,31 +3,55 @@ export interface Project {
   title: string;
   description: string;
   technologies: string[];
-  image?: string;
-  link?: string;
+  image: string;
   github?: string;
+  deployed?: string;
 }
 
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Product Discovery Platform",
-    description: "Built an internal product discovery platform for Hindustan Unilever, enabling efficient product search and management.",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "TypeScript"],
-    image: "/projects/discovery-platform.png",
+    title: "EBO",
+    description:
+      "EBO is a service provider for decorating events, birthdays, weddings, etc.",
+    technologies: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "AWS",
+      "Firebase",
+      "Tailwind CSS",
+      "TypeScript",
+    ],
+    image: "/projects/ebo.png",
+    deployed: "https://www.ebonow.com/",
   },
   {
     id: "2",
-    title: "Pinterest-like Automation Platform",
-    description: "Created an automation product website similar to Pinterest, featuring dynamic content management and user interactions.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "AWS"],
-    image: "/projects/automation-platform.png",
+    title: "Automation Factory",
+    description:
+      "An enterprise-grade automation platform that streamlines business processes through intelligent workflow automation and integration capabilities.",
+    technologies: ["React", "Node.js", "PostgreSQL", "Docker", "Kubernetes"],
+    image: "/projects/automation.png",
+    deployed: "NDA",
   },
   {
     id: "3",
-    title: "EBO Web Platform",
-    description: "Contributed to core feature development for web platforms during internship at EBO Solutions.",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
-    image: "/projects/ebo-platform.png",
+    title: "Unmaze Onetech",
+    description:
+      "A powerful discovery platform that helps businesses identify and analyze market opportunities through advanced data analytics and visualization.",
+    technologies: ["Next.js", "Python", "TensorFlow", "Redis", "Azure"],
+    image: "/projects/unmaze.png",
+    deployed: "NDA",
   },
-] as const; 
+  {
+    id: "4",
+    title: "Meesho Clone",
+    description:
+      "A powerful discovery platform that helps businesses identify and analyze market opportunities through advanced data analytics and visualization.",
+    technologies: ["Next.js", "Python", "TensorFlow", "Redis", "Azure"],
+    image: "/projects/meesho.png",
+    deployed: "meesho-frontend.vercel.app",
+  },
+];
