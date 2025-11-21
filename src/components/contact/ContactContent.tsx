@@ -1,8 +1,14 @@
-'use client';
+"use client";
 
 import { PERSONAL_INFO } from "@/lib/constants";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, Mail, MapPin, Phone } from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Github, Mail, MapPin, Phone, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -43,6 +49,15 @@ export function ContactContent() {
                 className="text-muted-foreground hover:text-foreground"
               >
                 {PERSONAL_INFO.phone}
+              </Link>
+            </div>
+            <div className="flex items-center gap-x-3">
+              <MessageCircle className="h-5 w-5 text-muted-foreground" />
+              <Link
+                href={PERSONAL_INFO.whatsapp}
+                className="text-muted-foreground hover:text-foreground"
+              >
+                WhatsApp
               </Link>
             </div>
             <div className="flex items-center gap-x-3">
@@ -88,4 +103,4 @@ export function ContactContent() {
       </div>
     </motion.div>
   );
-} 
+}

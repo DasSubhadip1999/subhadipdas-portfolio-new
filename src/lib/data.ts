@@ -32,7 +32,15 @@ export const projects: Project[] = [
     title: "Automation Factory",
     description:
       "An enterprise-grade automation platform that streamlines business processes through intelligent workflow automation and integration capabilities.",
-    technologies: ["React", "Node.js", "PostgreSQL", "Docker", "Kubernetes"],
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Azure VM",
+      "Elastic Search",
+      "Drupal",
+    ],
     image: "/projects/automation.png",
     deployed: "NDA",
   },
@@ -41,7 +49,14 @@ export const projects: Project[] = [
     title: "Unmaze Onetech",
     description:
       "A powerful discovery platform that helps businesses identify and analyze market opportunities through advanced data analytics and visualization.",
-    technologies: ["Next.js", "Python", "TensorFlow", "Redis", "Azure"],
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Azure SSO",
+      "Azure App Service",
+    ],
     image: "/projects/unmaze.png",
     deployed: "NDA",
   },
@@ -49,9 +64,10 @@ export const projects: Project[] = [
     id: "4",
     title: "Meesho Clone",
     description:
-      "A powerful discovery platform that helps businesses identify and analyze market opportunities through advanced data analytics and visualization.",
-    technologies: ["Next.js", "Python", "TensorFlow", "Redis", "Azure"],
+      "From trendy fashion finds to essential homeware, Meesho is your one-stop shop for everything you need. Explore millions of products across a wide variety of Clothes and Products",
+    technologies: ["Next.js", "Express.js", "MongoDB", "Vercel", "SendGrid"],
     image: "/projects/meesho.png",
-    deployed: "meesho-frontend.vercel.app",
+    deployed: "https://meesho-frontend.vercel.app",
+    github: "https://github.com/DasSubhadip1999/meesho-frontend.git",
   },
 ];

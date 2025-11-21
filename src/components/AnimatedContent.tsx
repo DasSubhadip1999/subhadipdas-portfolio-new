@@ -18,9 +18,9 @@ export function AnimatedContent() {
         Hi, I&apos;m {PERSONAL_INFO.name}
       </h1>
       <p className="mt-6 text-lg leading-8 text-muted-foreground">
-        {PERSONAL_INFO.role} with 2 years of experience in the MERN stack.
-        Passionate about building scalable web applications and staying current
-        with industry trends.
+        {PERSONAL_INFO.role} with {PERSONAL_INFO.experience} years of experience
+        in the MERN stack. Passionate about building scalable web applications
+        and staying current with industry trends.
       </p>
       <div className="mt-10 flex items-center justify-center gap-x-6">
         <Button asChild>
@@ -48,4 +48,4 @@ export function AnimatedContent() {
       </div>
     </motion.div>
   );
-} 
+}

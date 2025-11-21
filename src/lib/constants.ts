@@ -33,8 +33,11 @@ export const SOCIAL_LINKS = [
 export const PERSONAL_INFO = {
   name: "Subhadip Das",
   role: "Fullstack Developer",
+  experience: 3,
   location: "West Bengal, India",
   email: "subhadipdasrng54@gmail.com",
   phone: "+91 8906499398",
+  whatsapp:
+    "https://api.whatsapp.com/send?phone=+918906499398&text=Hi Subhadip, I saw your portfolio, would like to connect with you further",
   github: "https://github.com/DasSubhadip1999",
-} as const; 
+} as const;

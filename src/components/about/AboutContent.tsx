@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { PERSONAL_INFO } from "@/lib/constants";
 import { motion } from "framer-motion";
@@ -11,7 +11,9 @@ export function AboutContent() {
       transition={{ duration: 0.5 }}
       className="mx-auto max-w-3xl"
     >
-      <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">About Me</h1>
+      <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+        About Me
+      </h1>
       <div className="mt-6 space-y-7 text-lg text-muted-foreground">
         <p>
           Hi, I&apos;m {PERSONAL_INFO.name}, a {PERSONAL_INFO.role} based in{" "}
@@ -20,10 +22,10 @@ export function AboutContent() {
           Node.js).
         </p>
         <p>
-          With 2 years of experience in full-stack development, I&apos;ve worked
-          on various projects ranging from internal tools to customer-facing
-          applications. I&apos;m passionate about creating efficient, scalable,
-          and user-friendly solutions.
+          With {PERSONAL_INFO.experience} years of experience in full-stack
+          development, I&apos;ve worked on various projects ranging from
+          internal tools to customer-facing applications. I&apos;m passionate
+          about creating efficient, scalable, and user-friendly solutions.
         </p>
         <h2 className="text-2xl font-bold tracking-tight text-foreground">
           Skills & Technologies
@@ -56,4 +58,4 @@ export function AboutContent() {
       </div>
     </motion.div>
   );
-} 
+}
