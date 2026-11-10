@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T14:07:37.741247+00:00",
+  "title": "Design System: Subhadip Das Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "limewash-wall": {
+        "role": "neutral",
+        "displayName": "Limewash Wall",
+        "canonical": "#eef3f4",
+        "tonalRamp": [
+          "#212a2b",
+          "#36464a",
+          "#496469",
+          "#5c828a",
+          "#7fa2a9",
+          "#a6bbbf",
+          "#ced8da",
+          "#f1f3f4"
+        ]
+      },
+      "board-ink": {
+        "role": "neutral",
+        "displayName": "Board Ink",
+        "canonical": "#15130f",
+        "tonalRamp": [
+          "#2a2822",
+          "#474238",
+          "#665d4d",
+          "#857961",
+          "#a49984",
+          "#bcb6a9",
+          "#d8d5cf",
+          "#f3f3f1"
+        ]
+      },
+      "enamel-white": {
+        "role": "neutral",
+        "displayName": "Enamel White",
+        "canonical": "#fffaf0",
+        "tonalRamp": [
+          "#3e2e0f",
+          "#6e4f12",
+          "#a4720f",
+          "#df9706",
+          "#f6b432",
+          "#eec677",
+          "#efddb8",
+          "#f9f4ec"
+        ]
+      },
+      "chrome-yellow": {
+        "role": "primary",
+        "displayName": "Chrome Yellow",
+        "canonical": "#ffc72c",
+        "tonalRamp": [
+          "#3e310f",
+          "#6e5512",
+          "#a47c0f",
+          "#dfa606",
+          "#f6c232",
+          "#eece77",
+          "#efe1b8",
+          "#f9f5ec"
+        ]
+      },
+      "sindoor-vermilion": {
+        "role": "primary",
+        "displayName": "Sindoor Vermilion",
+        "canonical": "#c8321f",
+        "tonalRamp": [
+          "#371915",
+          "#62261e",
+          "#902f23",
+          "#c23523",
+          "#db5d4c",
+          "#de9187",
+          "#e8c4bf",
+          "#f7efee"
+        ]
+      },
+      "peacock-teal": {
+        "role": "secondary",
+        "displayName": "Peacock Teal",
+        "canonical": "#00796b",
+        "tonalRamp": [
+          "#0f3e38",
+          "#126e63",
+          "#0fa493",
+          "#06dfc6",
+          "#32f6df",
+          "#77eee0",
+          "#b8efe9",
+          "#ecf9f7"
+        ]
+      },
+      "ultramarine": {
+        "role": "secondary",
+        "displayName": "Ultramarine",
+        "canonical": "#1f4fa3",
+        "tonalRamp": [
+          "#162236",
+          "#20375f",
+          "#274b8c",
+          "#295fbd",
+          "#5182d6",
+          "#8aa7db",
+          "#c1cfe6",
+          "#eef1f7"
+        ]
+      },
+      "leaf-green": {
+        "role": "secondary",
+        "displayName": "Leaf Green",
+        "canonical": "#2e7d32",
+        "tonalRamp": [
+          "#1b311c",
+          "#2a552d",
+          "#377c3a",
+          "#41a546",
+          "#67c16b",
+          "#97ce9a",
+          "#c7e0c8",
+          "#eff5f0"
+        ]
+      },
+      "rani-pink": {
+        "role": "secondary",
+        "displayName": "Rani Pink",
+        "canonical": "#c2185b",
+        "tonalRamp": [
+          "#391422",
+          "#641c38",
+          "#931f4d",
+          "#c71e61",
+          "#e04884",
+          "#e184a9",
+          "#e9becf",
+          "#f7edf1"
+        ]
+      },
+      "tin-metal": {
+        "role": "neutral",
+        "displayName": "Tin Metal",
+        "canonical": "#8a949a",
+        "tonalRamp": [
+          "#252728",
+          "#3c4143",
+          "#545b5f",
+          "#6b757b",
+          "#8d969b",
+          "#aeb4b7",
+          "#d2d4d6",
+          "#f2f2f3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Sign lettering",
+        "purpose": "The name on the shop sign only."
+      },
+      "headline": {
+        "displayName": "Board lettering",
+        "purpose": "Section signs and employer names."
+      },
+      "title": {
+        "displayName": "Small board title",
+        "purpose": "Titles on small boards."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Opening line of a section."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs and bullets."
+      },
+      "label": {
+        "displayName": "Caption",
+        "purpose": "Plain-language captions under signs; never above a heading."
+      },
+      "bangla": {
+        "displayName": "Bengali line",
+        "purpose": "Bilingual name under the sign lettering."
+      }
+    },
+    "shadows": [
+      {
+        "name": "board-cast",
+        "value": "inset 0 1px 0 rgb(255 255 255 / .35), inset 0 -2px 0 rgb(0 0 0 / .12), 0 22px 34px -16px rgb(30 45 55 / .42), 0 6px 10px -4px rgb(30 45 55 / .2)",
+        "purpose": "Every enamel board hanging off the wall."
+      },
+      {
+        "name": "plaque-lift",
+        "value": "0 10px 18px -10px rgb(30 45 55 / .55), 0 3px 4px rgb(0 0 0 / .16)",
+        "purpose": "Plaque buttons."
+      },
+      {
+        "name": "painter-shade",
+        "value": "0.055em 0.06em 0 var(--shade)",
+        "purpose": "text-shadow on display lettering only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Plaque hover, sign lighting, counters."
+      },
+      {
+        "name": "board-swing",
+        "value": "spring(stiffness 120, damping 5, mass 0.7)",
+        "purpose": "Hanging boards reacting to scroll velocity and cursor."
+      },
+      {
+        "name": "stamp-land",
+        "value": "spring(stiffness 500, damping 22)",
+        "purpose": "Rubber stamp landing at -14deg."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Plaque",
+      "kind": "button",
+      "refersTo": "plaque-primary",
+      "description": "Main action, e.g. Download resume.",
+      "html": "<button class=\"ds-plaque-primary\">Download resume</button>",
+      "css": ".ds-plaque-primary{display:inline-flex;align-items:center;min-height:48px;padding:12px 24px;border:0;border-radius:6px;font:700 1rem 'Hind',system-ui,sans-serif;background:#15130f;color:#ffc72c;box-shadow:inset 0 0 0 2px #ffc72c,inset 0 0 0 5px #15130f,inset 0 0 0 6.5px #ffc72c,0 10px 18px -10px rgb(30 45 55/.55),0 3px 4px rgb(0 0 0/.16);transition:translate .18s cubic-bezier(.16,1,.3,1);cursor:pointer}.ds-plaque-primary:hover{translate:0 -2px}.ds-plaque-primary:active{translate:0 2px}.ds-plaque-primary:focus-visible{outline:3px solid #15130f;outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Plaque",
+      "kind": "button",
+      "refersTo": "plaque-secondary",
+      "description": "Second action, e.g. Make an enquiry.",
+      "html": "<button class=\"ds-plaque-secondary\">Make an enquiry</button>",
+      "css": ".ds-plaque-secondary{display:inline-flex;align-items:center;min-height:48px;padding:12px 24px;border:0;border-radius:6px;font:700 1rem 'Hind',system-ui,sans-serif;background:#00796b;color:#fffaf0;box-shadow:inset 0 0 0 2px #ffc72c,inset 0 0 0 5px #00796b,inset 0 0 0 6.5px #ffc72c,0 10px 18px -10px rgb(30 45 55/.55),0 3px 4px rgb(0 0 0/.16);transition:translate .18s cubic-bezier(.16,1,.3,1);cursor:pointer}.ds-plaque-secondary:hover{translate:0 -2px}.ds-plaque-secondary:active{translate:0 2px}.ds-plaque-secondary:focus-visible{outline:3px solid #15130f;outline-offset:3px}"
+    },
+    {
+      "name": "Enamel Board",
+      "kind": "card",
+      "refersTo": "board-yellow",
+      "description": "The container for every section and item.",
+      "html": "<div class=\"ds-board\"><h3>Rate card</h3><p>Hangs from two chains on the limewash wall.</p></div>",
+      "css": ".ds-board{position:relative;border-radius:7px;padding:28px 32px;background:#ffc72c;color:#15130f;font-family:'Hind',system-ui,sans-serif;box-shadow:inset 0 1px 0 rgb(255 255 255/.35),inset 0 -2px 0 rgb(0 0 0/.12),0 22px 34px -16px rgb(30 45 55/.42),0 6px 10px -4px rgb(30 45 55/.2)}.ds-board::before{content:'';position:absolute;inset:9px;border:2.5px solid #15130f;border-radius:4px;pointer-events:none}.ds-board h3{margin:0;font-family:'Yatra One',serif;font-weight:400;font-size:2.25rem;line-height:1;text-shadow:.055em .06em 0 #c8321f}.ds-board p{margin:8px 0 0;font-weight:500}"
+    },
+    {
+      "name": "Tin Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Tech and skill tags.",
+      "html": "<span class=\"ds-tag\">Node.js</span>",
+      "css": ".ds-tag{display:inline-flex;padding:4px 10px;border-radius:4px;font:700 .8rem 'Hind',system-ui,sans-serif;color:#fffaf0;background:#00796b;box-shadow:inset 0 0 0 1.5px currentColor}"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "description": "Section link in the top bar.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Experience</a><a href=\"#\">Projects</a></nav>",
+      "css": ".ds-nav{display:flex;gap:4px;padding:10px;background:#eef3f4;border-bottom:3px solid #15130f}.ds-nav a{padding:8px 12px;border-radius:6px;font:700 .95rem 'Hind',system-ui,sans-serif;color:#15130f;text-decoration:none}.ds-nav a:hover,.ds-nav a:focus-visible{background:#15130f;color:#ffc72c;outline:none}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Bazaar Street",
+    "overview": "The page is a lime-washed wall in a Bengal market lane, hung with enamel tin signboards. Every section is a board on two chains, lettered by a sign painter, in the saturated colours real shopfronts use. Density alternates like a real street; type does the decorating.",
+    "keyCharacteristics": [
+      "Cool limewash ground, never cream.",
+      "Full palette: six enamel colours each own whole boards, not accents.",
+      "Sign-painter display lettering with a hard drop shade in a darker tone of the board.",
+      "Boards hang on chains and move with real spring physics.",
+      "A rubber stamp marks what has been visited."
+    ],
+    "rules": [
+      {
+        "name": "The Whole Board Rule",
+        "body": "A colour is spent on a whole board or plaque, never scattered as small accents on a neutral card.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink Pairing Rule",
+        "body": "Yellow and white boards take Board Ink lettering; vermilion, teal, green, ultramarine and pink take Enamel White.",
+        "section": "colors"
+      },
+      {
+        "name": "The Painter's Shade Rule",
+        "body": "Display lettering carries a hard drop shade in a darker tone of the board. This is the world's native device, not a costume shadow.",
+        "section": "typography"
+      },
+      {
+        "name": "The Caption Below Rule",
+        "body": "A sign's plain-language label sits under its lettering, never above it as an eyebrow.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lit Sign Rule",
+        "body": "Section signs start dim and light to full colour with the stamp when reached.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do give every new section a hanging sign with a plain-language caption below it.",
+      "Do paint whole boards in one enamel tone and pair text per the Ink Pairing Rule.",
+      "Do let lettering carry the decoration; reuse chains, rivets, bunting and stamps before inventing ornaments.",
+      "Do keep every motion behind prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't warm the wall toward cream or parchment; the ground stays cool limewash (#eef3f4).",
+      "Don't put an uppercase eyebrow label above a heading.",
+      "Don't use zero-blur block shadows on boxes; the only hard shadow is the painter's shade on lettering.",
+      "Don't use pure black (#000) for text or grounds; use Board Ink (#15130f).",
+      "Don't use emoji or Unicode glyphs as icons; icons come from lucide at one stroke weight."
+    ]
+  }
+}

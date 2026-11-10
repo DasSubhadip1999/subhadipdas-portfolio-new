@@ -1,9 +1,6 @@
-import { ProjectsContent } from "@/components/projects/ProjectsContent";
+import { redirect } from "next/navigation";
 
-export default function ProjectsPage() {
-  return (
-    <main className="container py-24">
-      <ProjectsContent />
-    </main>
-  );
-} 
+// Old route kept so existing links land on the right section.
+export default function Page() {
+  redirect("/#stalls");
+}

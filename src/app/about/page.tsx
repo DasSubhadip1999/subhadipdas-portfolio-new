@@ -1,10 +1,6 @@
-import { PERSONAL_INFO } from "@/lib/constants";
-import { AboutContent } from "@/components/about/AboutContent";
+import { redirect } from "next/navigation";
 
-export default function AboutPage() {
-  return (
-    <main className="container py-24">
-      <AboutContent />
-    </main>
-  );
-} 
+// Old route kept so existing links land on the right section.
+export default function Page() {
+  redirect("/#proprietor");
+}

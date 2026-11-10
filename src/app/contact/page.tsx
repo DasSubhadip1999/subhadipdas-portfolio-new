@@ -1,9 +1,6 @@
-import { ContactContent } from "@/components/contact/ContactContent";
+import { redirect } from "next/navigation";
 
-export default function ContactPage() {
-  return (
-    <main className="container py-24">
-      <ContactContent />
-    </main>
-  );
-} 
+// Old route kept so existing links land on the right section.
+export default function Page() {
+  redirect("/#enquiry");
+}

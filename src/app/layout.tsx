@@ -1,128 +1,78 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Galada, Hind, Yatra_One } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ThemeProvider } from "@/components/theme-provider";
+import { GameProvider } from "@/components/game/GameProvider";
+import { PERSONAL_INFO } from "@/lib/data";
 
-const inter = Inter({ subsets: ["latin"] });
+const sign = Yatra_One({ weight: "400", subsets: ["latin"], variable: "--font-sign", display: "swap" });
+const body = Hind({ weight: ["400", "500", "600", "700"], subsets: ["latin"], variable: "--font-body", display: "swap" });
+const bangla = Galada({ weight: "400", subsets: ["latin"], variable: "--font-bangla", display: "swap", preload: false });
+
+const description =
+  "Senior Software Engineer and Team Lead with 3.5+ years building scalable web apps with React, Next.js, Node.js, TypeScript and serverless AWS. Shipped platforms used by 10,000+ Hindustan Unilever employees.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(PERSONAL_INFO.site),
   title: {
-    default: "Subhadip Das | Full Stack Developer",
+    default: "Subhadip Das | Senior Software Engineer",
     template: "%s | Subhadip Das",
   },
-  description:
-    "Full Stack Developer specializing in React, Node.js, and modern web technologies. Building scalable and efficient web applications.",
+  description,
   keywords: [
     "Subhadip Das",
+    "Senior Software Engineer",
     "Full Stack Developer",
-    "React Developer",
-    "Node.js Developer",
-    "Web Developer",
-    "Portfolio",
-    "JavaScript",
+    "Team Lead",
+    "Node.js",
     "TypeScript",
+    "React",
     "Next.js",
-    "MERN Stack",
+    "AWS Lambda",
+    "Serverless",
+    "System Design",
   ],
-  authors: [
-    { name: "Subhadip Das", url: "https://github.com/DasSubhadip1999" },
-  ],
+  authors: [{ name: "Subhadip Das", url: PERSONAL_INFO.github }],
   creator: "Subhadip Das",
-  publisher: "Subhadip Das",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL("https://subhadipdas.vercel.app"),
-  alternates: {
-    canonical: "/",
-  },
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://subhadipdas.vercel.app",
-    title: "Subhadip Das | Full Stack Developer",
-    description:
-      "Full Stack Developer specializing in React, Node.js, and modern web technologies.",
-    siteName: "Subhadip Das Portfolio",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Subhadip Das Portfolio",
-      },
-    ],
+    locale: "en_IN",
+    url: PERSONAL_INFO.site,
+    title: "Subhadip Das | Senior Software Engineer",
+    description,
+    siteName: "Subhadip Das",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Subhadip Das | Full Stack Developer",
-    description:
-      "Full Stack Developer specializing in React, Node.js, and modern web technologies.",
-    creator: "@DasSubhadip1999",
-    images: ["/og-image.png"],
+    title: "Subhadip Das | Senior Software Engineer",
+    description,
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  verification: {
-    google: "your-google-site-verification",
-  },
+  robots: { index: true, follow: true },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const viewport: Viewport = {
+  themeColor: "#eef3f4",
+  colorScheme: "light",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#ffffff" />
-      </head>
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="relative flex min-h-screen flex-col">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-        </ThemeProvider>
+    <html lang="en" className={`${sign.variable} ${body.variable} ${bangla.variable}`}>
+      <body className="font-body">
+        {/* Shared ink texture for rubber stamps. */}
+        <svg aria-hidden width="0" height="0" className="absolute">
+          <filter id="ink-rough">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" />
+            <feDisplacementMap in="SourceGraphic" scale="3.2" />
+          </filter>
+        </svg>
+        <GameProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </GameProvider>
       </body>
     </html>
   );

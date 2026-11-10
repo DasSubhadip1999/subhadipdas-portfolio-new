@@ -1,11 +1,25 @@
-import { AnimatedContent } from "@/components/AnimatedContent";
-import { MouseParallax } from "@/components/MouseParallax";
+import { Bunting } from "@/components/Bunting";
+import { Shopfront } from "@/components/sections/Shopfront";
+import { Proprietor } from "@/components/sections/Proprietor";
+import { Workshops } from "@/components/sections/Workshops";
+import { Stalls } from "@/components/sections/Stalls";
+import { Stock } from "@/components/sections/Stock";
+import { Enquiry } from "@/components/sections/Enquiry";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 relative">
-      <MouseParallax />
-      <AnimatedContent />
-    </main>
+    <>
+      <Shopfront />
+      <Bunting />
+      <Proprietor />
+      <Bunting offset={2} />
+      <Workshops />
+      <Bunting offset={4} />
+      <Stalls />
+      <Bunting offset={1} />
+      <Stock />
+      <Bunting offset={3} />
+      <Enquiry />
+    </>
   );
 }
